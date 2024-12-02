@@ -1,7 +1,9 @@
 import { useState } from "react";
+import languagesData from "./data/languages";
 
 function App() {
   const [count, setCount] = useState(0);
+  console.log(languagesData);
 
   return (
     <>
