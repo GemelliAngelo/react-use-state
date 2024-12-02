@@ -4,7 +4,41 @@
   padding: 0;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1000px;
+  max-width: 100%;
+  padding: 0 10px;
+}
+
+/* # HEADER */
+
 .header {
   padding: 2rem 1rem;
   background-color: #d8f9fa;
+}
+
+/* # MAIN */
+
+.filters {
+  margin: 30px 0;
+}
+
+.filters .filters-list {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+
+.filters-button {
+  background-color: #0d6efd;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
 }
