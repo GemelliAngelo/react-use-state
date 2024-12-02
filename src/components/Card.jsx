@@ -1,5 +1,3 @@
-import languagesData from "../data/languages";
-
 export default function Card({ title, description }) {
   return (
     <div className="card">
