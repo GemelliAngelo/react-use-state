@@ -44,6 +44,7 @@ body {
   padding: 10px 20px;
   border: none;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 /* * CARD */
@@ -57,4 +58,8 @@ body {
 
 .card-title {
   margin-bottom: 1rem;
+}
+
+.card-description {
+  font-size: 1.2rem;
 }
