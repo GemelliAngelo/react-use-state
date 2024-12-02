@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Filters from "./Filters";
 import Card from "./Card";
-import languagesData from "../data/languages";
 
 export default function Main() {
   const [data, setData] = useState();
@@ -16,6 +15,12 @@ export default function Main() {
     setTitle(title);
   };
 
+  const [description, setDescription] = useState();
+
+  const descriptionChange = (description) => {
+    setDescription(description);
+  };
+
   return (
     <main>
       <div className="container">
@@ -24,8 +29,9 @@ export default function Main() {
           setTitle={titleChange}
           status={data}
           setStatus={statusChange}
+          setDescription={setDescription}
         />
-        <Card title={title} status={data} />
+        <Card title={title} status={data} description={description} />
       </div>
     </main>
   );
