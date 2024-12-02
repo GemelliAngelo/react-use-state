@@ -1,9 +1,10 @@
-export default function Button({ title, status, setStatus }) {
-  console.log(status);
-
+export default function Button({ title, setStatus, setTitle }) {
   return (
     <button
-      onClick={() => setStatus("chosen")}
+      onClick={() => {
+        setStatus("chosen");
+        setTitle(title);
+      }}
       type="button"
       className="filters-button"
     >

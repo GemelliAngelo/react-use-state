@@ -10,20 +10,22 @@ export default function Main() {
     setData(status);
   };
 
+  const [title, setTitle] = useState();
+
+  const titleChange = (title) => {
+    setTitle(title);
+  };
+
   return (
     <main>
       <div className="container">
-        <Filters status={data} setStatus={statusChange} />
-        {languagesData.map((language) => (
-          <Card
-            key={language.id}
-            id={language.id}
-            title={language.title}
-            description={language.description}
-            setStatus={statusChange}
-            status={data}
-          />
-        ))}
+        <Filters
+          title={title}
+          setTitle={titleChange}
+          status={data}
+          setStatus={statusChange}
+        />
+        <Card title={title} status={data} />
       </div>
     </main>
   );

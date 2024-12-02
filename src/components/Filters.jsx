@@ -1,7 +1,7 @@
 import languagesData from "../data/languages";
 import Button from "./Button";
 
-export default function Filters({ status, setStatus }) {
+export default function Filters({ status, setStatus, setTitle }) {
   return (
     <div className="filters">
       <ul className="filters-list">
@@ -12,6 +12,7 @@ export default function Filters({ status, setStatus }) {
                 status={status}
                 setStatus={setStatus}
                 title={language.title}
+                setTitle={setTitle}
               />
             </li>
           );
