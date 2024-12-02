@@ -44,6 +44,15 @@ function App() {
               </li>
             </ul>
           </div>
+          <div className="card">
+            <h2 className="card-title">HTML</h2>
+            <p className="card-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+              ipsa atque voluptates itaque eaque culpa, esse quas quis, magni
+              sed illo maxime aspernatur ratione! Quaerat dolores dicta
+              excepturi. Non, natus!
+            </p>
+          </div>
         </div>
       </main>
       <footer></footer>

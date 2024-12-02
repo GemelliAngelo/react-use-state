@@ -24,8 +24,11 @@ body {
 
 /* # MAIN */
 
+/* * FILTERS */
+
 .filters {
   margin: 30px 0;
+  padding: 30px;
 }
 
 .filters .filters-list {
@@ -41,4 +44,17 @@ body {
   padding: 10px 20px;
   border: none;
   border-radius: 10px;
+}
+
+/* * CARD */
+
+.card {
+  border: 1px grey solid;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 30px 0;
+}
+
+.card-title {
+  margin-bottom: 1rem;
 }
