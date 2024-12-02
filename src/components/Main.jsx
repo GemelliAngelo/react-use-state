@@ -29,7 +29,7 @@ export default function Main() {
           setTitle={titleChange}
           status={data}
           setStatus={statusChange}
-          setDescription={setDescription}
+          setDescription={descriptionChange}
         />
         <Card title={title} status={data} description={description} />
       </div>
