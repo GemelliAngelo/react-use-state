@@ -40,11 +40,15 @@ body {
 .filters-button {
   background-color: #0d6efd;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   padding: 10px 20px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.active {
+  background-color: goldenrod;
 }
 
 /* * CARD */
@@ -54,6 +58,7 @@ body {
   border-radius: 10px;
   padding: 30px;
   margin: 30px 0;
+  display: none;
 }
 
 .card-title {
@@ -62,4 +67,8 @@ body {
 
 .card-description {
   font-size: 1.2rem;
+}
+
+.chosen {
+  display: block;
 }
