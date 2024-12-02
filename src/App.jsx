@@ -3,7 +3,6 @@ import languagesData from "./data/languages";
 
 function App() {
   const [count, setCount] = useState(0);
-  console.log(languagesData);
 
   return (
     <>
@@ -14,36 +13,15 @@ function App() {
         <div className="container">
           <div className="filters">
             <ul className="filters-list">
-              <li>
-                <button type="button" className="filters-button">
-                  HTML
-                </button>
-              </li>
-              <li>
-                <button type="button" className="filters-button">
-                  CSS
-                </button>
-              </li>
-              <li>
-                <button type="button" className="filters-button">
-                  Javascript
-                </button>
-              </li>
-              <li>
-                <button type="button" className="filters-button">
-                  Node.js
-                </button>
-              </li>
-              <li>
-                <button type="button" className="filters-button">
-                  Express
-                </button>
-              </li>
-              <li>
-                <button type="button" className="filters-button">
-                  ReactJS
-                </button>
-              </li>
+              {languagesData.map((language) => {
+                return (
+                  <li key={language.id}>
+                    <button type="button" className="filters-button">
+                      {language.title}
+                    </button>
+                  </li>
+                );
+              })}
             </ul>
           </div>
           <div className="card">
