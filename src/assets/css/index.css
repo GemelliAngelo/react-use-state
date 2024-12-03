@@ -65,5 +65,9 @@ body {
 }
 
 .card-description {
+  margin-top: 1rem;
+}
+
+.card-description {
   font-size: 1.2rem;
 }

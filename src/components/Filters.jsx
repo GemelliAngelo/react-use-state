@@ -1,12 +1,7 @@
 import languagesData from "../data/languages";
 import Button from "./Button";
 
-export default function Filters({
-  setTitle,
-  setDescription,
-  status,
-  setStatus,
-}) {
+export default function Filters({ setTitle, setDescription }) {
   return (
     <div className="filters">
       <ul className="filters-list">
@@ -18,8 +13,6 @@ export default function Filters({
                 setTitle={setTitle}
                 description={language.description}
                 setDescription={setDescription}
-                status={status}
-                setStatus={setStatus}
               />
             </li>
           );

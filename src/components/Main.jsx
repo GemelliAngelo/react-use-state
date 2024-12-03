@@ -15,12 +15,7 @@ export default function Main() {
     setDescription(description);
   };
 
-  const [status, setStatus] = useState();
-
-  const statusChange = (status) => {
-    setStatus(status);
-  };
-
+  //
   return (
     <main>
       <div className="container">
@@ -28,8 +23,6 @@ export default function Main() {
           title={title}
           setTitle={titleChange}
           setDescription={descriptionChange}
-          status={status}
-          setStatus={statusChange}
         />
         <Card title={title} description={description} />
       </div>

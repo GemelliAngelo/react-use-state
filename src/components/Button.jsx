@@ -3,18 +3,18 @@ export default function Button({
   setTitle,
   description,
   setDescription,
-  status,
-  setStatus,
 }) {
+  const handleState = (title, description) => {
+    setTitle(title);
+    setDescription(description);
+  };
   return (
     <button
       onClick={() => {
-        setTitle(title);
-        setDescription(description);
-        setStatus(status ? "" : "active");
+        handleState(title, description);
       }}
       type="button"
-      className={"filters-button " + status}
+      className={"filters-button"}
     >
       {title}
     </button>
