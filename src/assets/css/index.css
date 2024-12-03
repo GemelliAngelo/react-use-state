@@ -58,7 +58,6 @@ body {
   border-radius: 10px;
   padding: 30px;
   margin: 30px 0;
-  display: none;
 }
 
 .card-title {
@@ -67,8 +66,4 @@ body {
 
 .card-description {
   font-size: 1.2rem;
-}
-
-.chosen {
-  display: block;
 }
